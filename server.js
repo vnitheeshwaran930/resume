@@ -29,7 +29,7 @@ app.use('/api/skills', skillRoutes);
 // Dedicated Secure Resume Download Endpoint
 app.get('/api/resume/download', (req, res) => {
     const resumePath = path.join(__dirname, 'public', 'assets', 'resume', 'Nitheeshwaran_V_Resume.pdf');
-    
+
     if (fs.existsSync(resumePath)) {
         res.setHeader('Content-Type', 'application/pdf');
         res.setHeader('Content-Disposition', 'attachment; filename="Nitheeshwaran_V_Resume.pdf"');
@@ -67,7 +67,7 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 // Start server
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`\n======================================================`);
     console.log(`🚀 Nitheeshwaran V. Portfolio Server is live!`);
     console.log(`🌐 Local URL: \x1b[36mhttp://localhost:${PORT}\x1b[0m`);
