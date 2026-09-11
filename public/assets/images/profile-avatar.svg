@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8d7b8"/>
+      <stop offset="100%" stop-color="#e0ac7e"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="tieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circular background badge -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle tech grid pattern / circles -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6,6"/>
+  <circle cx="200" cy="200" r="150" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Developer Silhouette / Avatar in suit -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders & Blazer -->
+    <path d="M 85,380 C 85,310 130,285 160,270 L 175,380 L 225,380 L 240,270 C 270,285 315,310 315,380 Z" fill="url(#suitGrad)"/>
+    
+    <!-- White Shirt Collar -->
+    <polygon points="175,260 200,310 225,260 215,245 185,245" fill="#f8fafc"/>
+    <polygon points="175,250 200,280 185,245" fill="#e2e8f0"/>
+    <polygon points="225,250 200,280 215,245" fill="#cbd5e1"/>
+
+    <!-- Professional Blue Tie -->
+    <polygon points="196,280 204,280 208,350 200,370 192,350" fill="url(#tieGrad)"/>
+    <polygon points="194,275 206,275 204,285 196,285" fill="#1e40af"/>
+
+    <!-- Neck -->
+    <rect x="186" y="215" width="28" height="45" rx="6" fill="url(#skinGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="200" cy="180" rx="46" ry="54" fill="url(#skinGrad)"/>
+
+    <!-- Professional Haircut -->
+    <path d="M 152,175 C 150,130 170,115 200,115 C 235,115 248,135 248,175 C 248,185 244,165 240,150 C 220,135 180,135 155,160 Z" fill="#18181b"/>
+    <path d="M 153,165 C 158,140 185,128 220,130 C 235,131 245,142 247,155 C 243,148 235,140 215,140 C 185,140 165,152 153,165 Z" fill="#27272a"/>
+
+    <!-- Glasses (Smart Developer Look) -->
+    <rect x="164" y="166" width="28" height="18" rx="4" fill="none" stroke="#1e293b" stroke-width="3.5"/>
+    <rect x="208" y="166" width="28" height="18" rx="4" fill="none" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="192" y1="174" x2="208" y2="174" stroke="#1e293b" stroke-width="3.5"/>
+    <line x1="154" y1="172" x2="164" y2="172" stroke="#1e293b" stroke-width="3"/>
+    <line x1="236" y1="172" x2="246" y2="172" stroke="#1e293b" stroke-width="3"/>
+
+    <!-- Eyes inside glasses -->
+    <circle cx="178" cy="175" r="3.5" fill="#18181b"/>
+    <circle cx="222" cy="175" r="3.5" fill="#18181b"/>
+
+    <!-- Eyebrows -->
+    <path d="M 166,160 Q 178,157 190,161" fill="none" stroke="#18181b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 210,161 Q 222,157 234,160" fill="none" stroke="#18181b" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Friendly Smile -->
+    <path d="M 188,206 Q 200,216 212,206" fill="none" stroke="#8b4513" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Code / Tech Badges Floating -->
+  <g transform="translate(45, 120)">
+    <rect width="65" height="32" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="32.5" y="20" fill="#38bdf8" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">&lt;code/&gt;</text>
+  </g>
+
+  <g transform="translate(295, 230)">
+    <rect width="70" height="32" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#10b981" stroke-width="1.5"/>
+    <text x="35" y="20" fill="#34d399" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">{ JS/Node }</text>
+  </g>
+</svg>

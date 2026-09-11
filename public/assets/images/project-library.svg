@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="libGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#libGrad)"/>
+  <rect x="40" y="30" width="520" height="290" rx="10" fill="#292524" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="40" y="30" width="520" height="35" rx="10" fill="#1c1917"/>
+  <circle cx="65" cy="47" r="5" fill="#ef4444"/>
+  <circle cx="82" cy="47" r="5" fill="#f59e0b"/>
+  <circle cx="99" cy="47" r="5" fill="#10b981"/>
+  <text x="300" y="52" fill="#fcd34d" font-family="sans-serif" font-size="12" text-anchor="middle">Java Full Stack Library Management System</text>
+
+  <!-- Bookshelf graphic -->
+  <rect x="70" y="85" width="460" height="15" rx="2" fill="#b45309"/>
+  <!-- Books -->
+  <rect x="85" y="100" width="22" height="75" rx="2" fill="#dc2626"/>
+  <rect x="110" y="105" width="25" height="70" rx="2" fill="#2563eb"/>
+  <rect x="138" y="95" width="20" height="80" rx="2" fill="#16a34a"/>
+  <rect x="161" y="102" width="24" height="73" rx="2" fill="#f59e0b"/>
+  <rect x="188" y="98" width="28" height="77" rx="2" fill="#9333ea"/>
+  
+  <rect x="70" y="175" width="460" height="15" rx="2" fill="#b45309"/>
+
+  <!-- Database Card below -->
+  <rect x="70" y="205" width="220" height="95" rx="8" fill="#1c1917" stroke="#78350f"/>
+  <text x="85" y="230" fill="#fbbf24" font-family="sans-serif" font-weight="bold" font-size="12">SQL Relational Schema</text>
+  <text x="85" y="250" fill="#a8a29e" font-family="monospace" font-size="10">TABLE: books (id, isbn, title)</text>
+  <text x="85" y="268" fill="#a8a29e" font-family="monospace" font-size="10">TABLE: members (id, reg_no)</text>
+  <text x="85" y="286" fill="#a8a29e" font-family="monospace" font-size="10">TABLE: issue_log (due_date)</text>
+
+  <rect x="310" y="205" width="220" height="95" rx="8" fill="#1c1917" stroke="#78350f"/>
+  <text x="325" y="230" fill="#fbbf24" font-family="sans-serif" font-weight="bold" font-size="12">Java Backend Engine</text>
+  <text x="325" y="250" fill="#a8a29e" font-family="monospace" font-size="10">JDBC Connection Pool</text>
+  <text x="325" y="268" fill="#a8a29e" font-family="monospace" font-size="10">Encapsulation &amp; DAO Pattern</text>
+  <text x="325" y="286" fill="#10b981" font-family="monospace" font-size="10">✓ Automated Fine Calculator</text>
+</svg>

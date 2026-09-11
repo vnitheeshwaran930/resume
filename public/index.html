@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO & Metadata -->
+    <title>Nitheeshwaran V. | Computer Science Student &amp; Aspiring Software Developer</title>
+    <meta name="description" content="Official portfolio and resume of Nitheeshwaran V., 3rd-year B.E. Computer Science student at Government College of Engineering, Thanjavur. Aspiring Software Developer proficient in Java, Python, Node.js, Express, and MySQL.">
+    <meta name="keywords" content="Nitheeshwaran V, Portfolio, Resume, Full Stack Developer, Software Engineer, GCE Thanjavur, Node.js, Express, MySQL, Java, Web Development">
+    <meta name="author" content="Nitheeshwaran V.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nitheeshwaran V. - Personal Resume &amp; Portfolio">
+    <meta property="og:description" content="Explore projects, skills, education, and internship experience of Nitheeshwaran V.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/profile-avatar.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Design System CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         Site Header & Sticky Navigation
+         ====================================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo" aria-label="Nitheeshwaran V. Homepage">
+                <div class="nav-logo-badge">NV</div>
+                <span>Nitheeshwaran<span class="gradient-text">.dev</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navigation Actions (Theme Toggle, Resume Button, Mobile Hamburger) -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Dark or Light Mode" title="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <a href="/api/resume/download" class="btn btn-primary btn-sm" download="Nitheeshwaran_V_Resume.pdf" id="navResumeDownloadBtn">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Resume</span>
+                </a>
+
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- ==================================================================
+             1. Hero Section
+             ================================================================== -->
+        <section class="section hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-greeting">
+                        <span class="status-dot"></span>
+                        <span>Open to Software &amp; Web Development Roles</span>
+                    </div>
+                    
+                    <h1 class="hero-name">
+                        Hi, I'm <span class="gradient-text">Nitheeshwaran V.</span>
+                    </h1>
+
+                    <div class="hero-role-wrapper">
+                        <span id="roleTypewriter">Computer Science Engineering Student</span>
+                        <span class="typing-cursor"></span>
+                    </div>
+
+                    <p class="hero-description">
+                        Passionate 3rd-year Computer Science student with a strong foundation in full-stack web development, object-oriented design, and database engineering. Focused on building scalable, clean, and impactful software solutions.
+                    </p>
+
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>B.E. CSE (2024 - 2028)</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>GCE Thanjavur (CGPA: 7.59)</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span>View My Projects</span>
+                        </a>
+                        <a href="/api/resume/download" class="btn btn-outline" download="Nitheeshwaran_V_Resume.pdf">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Graphic with Modern Visual Effects -->
+                <div class="hero-visual">
+                    <div class="hero-avatar-wrapper">
+                        <div class="hero-avatar-inner">
+                            <img src="assets/images/profile-avatar.svg" alt="Nitheeshwaran V. Profile Avatar" class="hero-avatar-img">
+                        </div>
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-top-right">
+                            <div class="badge-icon icon-blue">
+                                <i class="fa-brands fa-node-js"></i>
+                            </div>
+                            <div>
+                                <small style="display:block; color:var(--text-muted); font-size:0.75rem;">Full Stack</small>
+                                <span>Express &amp; MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-left">
+                            <div class="badge-icon icon-green">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <small style="display:block; color:var(--text-muted); font-size:0.75rem;">Academics</small>
+                                <span>CGPA 7.59</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             2. About Me Section
+             ================================================================== -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Introduction</span>
+                    </span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">A glimpse into my academic journey, core interests, and professional aspiration.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 14px;">Driven by Curiosity &amp; Purposeful Code</h3>
+                        <p>
+                            I am a dedicated 3rd-year <strong>B.E. Computer Science and Engineering</strong> undergraduate at <strong>Government College of Engineering, Thanjavur (Sengipatti)</strong>, set to graduate in <strong>2028</strong>. With an academic standing of <strong>7.59 CGPA</strong>, I cultivate both theoretical rigor and practical software engineering practices.
+                        </p>
+                        <p>
+                            My primary objective is to contribute to high-impact projects in <strong>Software Development</strong> and <strong>Full-Stack Web Development</strong>. Having completed a rigorous internship in Java Full Stack technologies, I enjoy transforming complex requirements into reliable, responsive, and secure web applications.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-laptop-code highlight-icon"></i>
+                                <div>
+                                    <div class="highlight-title">Software Development</div>
+                                    <div class="highlight-desc">Proficient in Object-Oriented paradigms using Java, Python, and C.</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-globe highlight-icon"></i>
+                                <div>
+                                    <div class="highlight-title">Web Development</div>
+                                    <div class="highlight-desc">End-to-end architectures with Node.js, Express, REST APIs, and MySQL.</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-database highlight-icon"></i>
+                                <div>
+                                    <div class="highlight-title">Database Engineering</div>
+                                    <div class="highlight-desc">Relational schema design and safe parameterized MySQL operations.</div>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-lightbulb highlight-icon"></i>
+                                <div>
+                                    <div class="highlight-title">Continuous Learning</div>
+                                    <div class="highlight-desc">Eager to master emerging tools, frameworks, and engineering standards.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Snapshot Card -->
+                    <div class="academic-card">
+                        <div class="academic-header">
+                            <div class="academic-header-icon">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.15rem;">Academic Snapshot</h4>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Quick Information</span>
+                            </div>
+                        </div>
+
+                        <ul class="academic-list">
+                            <li class="academic-item">
+                                <span class="academic-label">Full Name</span>
+                                <span class="academic-value">Nitheeshwaran V.</span>
+                            </li>
+                            <li class="academic-item">
+                                <span class="academic-label">Degree</span>
+                                <span class="academic-value">B.E. Computer Science &amp; Engg.</span>
+                            </li>
+                            <li class="academic-item">
+                                <span class="academic-label">Institution</span>
+                                <span class="academic-value">GCE, Thanjavur</span>
+                            </li>
+                            <li class="academic-item">
+                                <span class="academic-label">Current Standing</span>
+                                <span class="academic-value"><span class="cgpa-pill">7.59 CGPA</span> (up to 4th Sem)</span>
+                            </li>
+                            <li class="academic-item">
+                                <span class="academic-label">Expected Graduation</span>
+                                <span class="academic-value">2028</span>
+                            </li>
+                            <li class="academic-item">
+                                <span class="academic-label">Location</span>
+                                <span class="academic-value">Srimushnam, Tamil Nadu</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             3. Education Section
+             ================================================================== -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Milestones</span>
+                    </span>
+                    <h2 class="section-title">Education <span class="gradient-text">History</span></h2>
+                    <p class="section-subtitle">Academic foundations and credentials that shaped my analytical mindset.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- College Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-degree">Bachelor of Engineering (B.E.) – Computer Science &amp; Engineering</h3>
+                                <span class="timeline-period">2024 – 2028</span>
+                            </div>
+                            <div class="timeline-institution">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span>Government College of Engineering, Thanjavur (Sengipatti)</span>
+                            </div>
+                            <p class="timeline-details">
+                                Currently pursuing 3rd Year under Anna University curriculum. Core coursework includes Data Structures &amp; Algorithms, Object-Oriented Programming (Java/C++), Operating Systems, Database Management Systems (DBMS), Computer Networks, and Full Stack Web Technologies.
+                            </p>
+                            <span class="timeline-badge">
+                                <i class="fa-solid fa-circle-check"></i> CGPA: 7.59 (Up to 4th Semester)
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 12th HSC Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-degree">Higher Secondary Certificate (12th Grade / HSC)</h3>
+                                <span class="timeline-period">2023 – 2024</span>
+                            </div>
+                            <div class="timeline-institution">
+                                <i class="fa-solid fa-school"></i>
+                                <span>D.V.C Higher Secondary School, Srimushnam</span>
+                            </div>
+                            <p class="timeline-details">
+                                Completed state board higher secondary curriculum with intensive focus on Mathematics, Physics, Chemistry, and Computer Science. Built early foundational passion for programming logic and algorithm design.
+                            </p>
+                            <span class="timeline-badge">
+                                <i class="fa-solid fa-circle-check"></i> Final Score: 80.6%
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 10th SSLC Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-degree">Secondary School Leaving Certificate (10th Grade / SSLC)</h3>
+                                <span class="timeline-period">2021 – 2022</span>
+                            </div>
+                            <div class="timeline-institution">
+                                <i class="fa-solid fa-school"></i>
+                                <span>D.V.C Higher Secondary School, Srimushnam</span>
+                            </div>
+                            <p class="timeline-details">
+                                Developed strong analytical abilities, basic computing principles, and exemplary academic consistency across all foundational disciplines.
+                            </p>
+                            <span class="timeline-badge">
+                                <i class="fa-solid fa-circle-check"></i> First Class Distinction
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             4. Skills Section
+             ================================================================== -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Expertise</span>
+                    </span>
+                    <h2 class="section-title">Technical &amp; Soft <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">Proficiencies acquired through rigorous coursework, hands-on projects, and professional internship training.</p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="skill-tabs">
+                    <button class="skill-tab-btn active" data-category="all">All Skills</button>
+                    <button class="skill-tab-btn" data-category="Programming">Programming</button>
+                    <button class="skill-tab-btn" data-category="Web Development">Web Development</button>
+                    <button class="skill-tab-btn" data-category="Tools">Tools &amp; Office</button>
+                    <button class="skill-tab-btn" data-category="Soft Skills">Soft Skills</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skillsContainer">
+                    <!-- Programming Skills -->
+                    <div class="skill-card" data-category="Programming">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-python" style="color: #38bdf8;"></i></div>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Programming">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-java" style="color: #f97316;"></i></div>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Programming">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-code" style="color: #60a5fa;"></i></div>
+                                <span class="skill-name">C Language</span>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Programming">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-cubes" style="color: #a855f7;"></i></div>
+                                <span class="skill-name">OOP Concepts</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development Skills -->
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-html5" style="color: #f97316;"></i></div>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-css3-alt" style="color: #38bdf8;"></i></div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-js" style="color: #facc15;"></i></div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-brands fa-node-js" style="color: #22c55e;"></i></div>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <span class="skill-percent">84%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="84"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-server" style="color: #cbd5e1;"></i></div>
+                                <span class="skill-name">Express.js</span>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="82"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Web Development">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-database" style="color: #0284c7;"></i></div>
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <span class="skill-percent">86%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="86"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Productivity -->
+                    <div class="skill-card" data-category="Tools">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-file-excel" style="color: #10b981;"></i></div>
+                                <span class="skill-name">MS Excel</span>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Tools">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-file-word" style="color: #2563eb;"></i></div>
+                                <span class="skill-name">MS Word</span>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Tools">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-file-powerpoint" style="color: #ea580c;"></i></div>
+                                <span class="skill-name">MS PowerPoint</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card" data-category="Soft Skills">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-people-group" style="color: #38bdf8;"></i></div>
+                                <span class="skill-name">Teamwork</span>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Soft Skills">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-user-tie" style="color: #6366f1;"></i></div>
+                                <span class="skill-name">Leadership</span>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="Soft Skills">
+                        <div class="skill-card-top">
+                            <div class="skill-info">
+                                <div class="skill-icon"><i class="fa-solid fa-brain" style="color: #ec4899;"></i></div>
+                                <span class="skill-name">Problem Solving</span>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="92"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             5. Internship / Experience Section
+             ================================================================== -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Practical Experience</span>
+                    </span>
+                    <h2 class="section-title">Internship &amp; <span class="gradient-text">Experience</span></h2>
+                    <p class="section-subtitle">Real-world industry immersion focused on enterprise web development.</p>
+                </div>
+
+                <div class="internship-wrapper">
+                    <div class="internship-card">
+                        <div class="internship-header">
+                            <div class="internship-title-group">
+                                <div class="company-logo">
+                                    <img src="assets/images/scion-logo.svg" alt="Scion R&D Logo">
+                                </div>
+                                <div>
+                                    <h3 class="intern-role">Java Full Stack Web Development Intern</h3>
+                                    <div class="intern-company">
+                                        <i class="fa-solid fa-building"></i>
+                                        <span>Scion Research and Development, Thanjavur</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="intern-period">
+                                <i class="fa-regular fa-calendar"></i> June 2026 – July 2026
+                            </span>
+                        </div>
+
+                        <p class="intern-description">
+                            Completed an intensive 1-month professional internship focused on <strong>Java Full Stack Web Development</strong>. Gained practical exposure through real project-based activities, architecting full-stack web modules, connecting enterprise Java backends to relational databases, and designing user interfaces.
+                        </p>
+
+                        <ul class="intern-bullets">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Engineered complete full-stack web components utilizing Java, JDBC, HTML5, CSS3, and JavaScript.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Designed normalized relational schemas in MySQL and implemented secure database transactions.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Collaborated in Agile project sprints, applying debugging methodologies and clean code principles.</span>
+                            </li>
+                        </ul>
+
+                        <div class="intern-actions">
+                            <button class="btn btn-primary btn-view-certificate" data-cert="assets/certificates/Scion_Internship_Certificate.pdf">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>View Certificate</span>
+                            </button>
+                            <a href="assets/certificates/Scion_Internship_Certificate.pdf" target="_blank" class="btn btn-outline" download="Scion_Internship_Certificate.pdf">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span>Open PDF in New Tab</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             6. Projects Section
+             ================================================================== -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span>Portfolio Showcase</span>
+                    </span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications showcasing full-stack development, database architecture, and UI engineering.</p>
+                </div>
+
+                <div class="projects-grid" id="projectsContainer">
+                    <!-- Project 1: Smart College Complaint Management System -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-category-badge">Full Stack</span>
+                            <img src="assets/images/project-complaint.svg" alt="Smart College Complaint Management System Preview" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Smart College Complaint Management System</h3>
+                            <p class="project-description">
+                                A web-based system where students can submit complaints and administrators can assign, manage, and track complaint status. Features ticket routing, status workflows, and parameterized database auditing.
+                            </p>
+                            <div class="project-tech">
+                                <div class="tech-tag-list">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/nitheeshwaran35/smart-college-complaint-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#home" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Student Academic Performance & CGPA Tracker -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-category-badge">Web Application</span>
+                            <img src="assets/images/project-cgpa.svg" alt="Student Academic Performance Tracker Preview" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Student Academic Performance &amp; CGPA Tracker</h3>
+                            <p class="project-description">
+                                An interactive academic evaluation platform engineered for engineering students to compute semester GPA/CGPA, visualize grade distributions across semesters, and forecast target academic standings.
+                            </p>
+                            <div class="project-tech">
+                                <div class="tech-tag-list">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/nitheeshwaran35/cgpa-academic-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#education" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Dynamic Portfolio & Resume Builder Web App -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-category-badge">Web Development</span>
+                            <img src="assets/images/project-portfolio.svg" alt="Portfolio Web App Preview" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Dynamic Portfolio &amp; Resume Web Application</h3>
+                            <p class="project-description">
+                                A modern responsive developer portfolio built with semantic HTML5, custom CSS design system, and Node.js REST API with automated MySQL storage, input sanitization, and downloadable PDF resume.
+                            </p>
+                            <div class="project-tech">
+                                <div class="tech-tag-list">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/nitheeshwaran35/personal-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#home" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Java Full Stack Library Management System -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-category-badge">Java Full Stack</span>
+                            <img src="assets/images/project-library.svg" alt="Java Library Management System Preview" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Java Full Stack Library Management System</h3>
+                            <p class="project-description">
+                                An enterprise library cataloging and inventory application developed during internship training at Scion R&amp;D. Implements book reservations, fine computations, and transactional SQL operations.
+                            </p>
+                            <div class="project-tech">
+                                <div class="tech-tag-list">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">OOP</span>
+                                    <span class="tech-tag">JDBC</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">HTML/CSS</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/nitheeshwaran35/java-library-management" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#experience" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             7. Extracurricular Activities & Certifications
+             ================================================================== -->
+        <section class="section activities-section" id="activities">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Beyond Academics</span>
+                    </span>
+                    <h2 class="section-title">Activities &amp; <span class="gradient-text">Certifications</span></h2>
+                    <p class="section-subtitle">Leadership, technical participation, and verified credentials.</p>
+                </div>
+
+                <div class="dual-section-grid">
+                    <!-- Extracurricular Activities Box -->
+                    <div class="card-box">
+                        <div class="card-box-header">
+                            <div class="card-box-icon">
+                                <i class="fa-solid fa-people-carry-box"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.25rem;">Extracurricular Activities</h3>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Co-curricular &amp; Campus Involvement</span>
+                            </div>
+                        </div>
+
+                        <ul class="activity-list">
+                            <li class="activity-item">
+                                <i class="fa-solid fa-check-circle activity-icon-bullet"></i>
+                                <div>
+                                    <div class="activity-item-title">Technical Symposium Participant &amp; Coordinator</div>
+                                    <div class="activity-item-desc">Actively represented GCE Thanjavur in inter-collegiate technical paper presentations and coding debug events.</div>
+                                </div>
+                            </li>
+                            <li class="activity-item">
+                                <i class="fa-solid fa-check-circle activity-icon-bullet"></i>
+                                <div>
+                                    <div class="activity-item-title">Computer Science Association Member</div>
+                                    <div class="activity-item-desc">Collaborated with peer student developers to organize coding workshops, seminars, and technical quizzes.</div>
+                                </div>
+                            </li>
+                            <li class="activity-item">
+                                <i class="fa-solid fa-check-circle activity-icon-bullet"></i>
+                                <div>
+                                    <div class="activity-item-title">Community Service &amp; Campus Initiatives</div>
+                                    <div class="activity-item-desc">Engaged in community outreach drives and student mentoring sessions on fundamental computer literacy.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications Box -->
+                    <div class="card-box">
+                        <div class="card-box-header">
+                            <div class="card-box-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.25rem;">Certifications</h3>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Verified Technical Credentials</span>
+                            </div>
+                        </div>
+
+                        <ul class="activity-list">
+                            <li class="activity-item">
+                                <i class="fa-solid fa-medal activity-icon-bullet" style="color: var(--accent-emerald);"></i>
+                                <div>
+                                    <div class="activity-item-title">Java Full Stack Web Development</div>
+                                    <div class="activity-item-desc">Scion Research and Development, Thanjavur (June 2026 – July 2026)</div>
+                                    <div style="margin-top: 6px;">
+                                        <button class="btn btn-secondary btn-sm btn-view-certificate" data-cert="assets/certificates/Scion_Internship_Certificate.pdf">
+                                            <i class="fa-solid fa-eye"></i> View Certificate
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="activity-item">
+                                <i class="fa-solid fa-medal activity-icon-bullet" style="color: var(--accent-emerald);"></i>
+                                <div>
+                                    <div class="activity-item-title">Full Stack Web Architecture &amp; REST APIs</div>
+                                    <div class="activity-item-desc">Certified competency in Node.js, Express, MySQL database design, and asynchronous client-server integration.</div>
+                                </div>
+                            </li>
+                            <li class="activity-item">
+                                <i class="fa-solid fa-medal activity-icon-bullet" style="color: var(--accent-emerald);"></i>
+                                <div>
+                                    <div class="activity-item-title">Python &amp; Object-Oriented Programming</div>
+                                    <div class="activity-item-desc">Comprehensive certification covering core data structures, OOP principles, algorithms, and modular design.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             8. Contact Section & Form
+             ================================================================== -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Get In Touch</span>
+                    </span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">Interested in an internship, project collaboration, or just want to say hello? Send me a message below!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Information Cards -->
+                    <div class="contact-info-cards">
+                        <div class="contact-item-card">
+                            <div class="contact-icon-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email Address</div>
+                                <a href="mailto:v.nitheeshwaran35@gmail.com" class="contact-value">v.nitheeshwaran35@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-circle">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Phone Number</div>
+                                <a href="tel:9150626410" class="contact-value">+91 9150626410</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-circle">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Residential Address</div>
+                                <div class="contact-value">L.A.T Nagar, Srimushnam, Tamil Nadu – 608703</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-circle">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">College Campus</div>
+                                <div class="contact-value">Govt. College of Engineering, Sengipatti, Thanjavur</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive AJAX Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Your Name <span style="color:var(--accent-rose)">*</span></label>
+                                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Alex Johnson" required>
+                                <span class="form-help-error">Please enter your full name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">Your Email <span style="color:var(--accent-rose)">*</span></label>
+                                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. alex@example.com" required>
+                                <span class="form-help-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject" class="form-label">Subject <span style="color:var(--accent-rose)">*</span></label>
+                                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="e.g. Internship Inquiry / Project Discussion" required>
+                                <span class="form-help-error">Please enter the subject.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">Message <span style="color:var(--accent-rose)">*</span></label>
+                                <textarea id="contactMessage" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                                <span class="form-help-error">Please enter your message (at least 10 characters).</span>
+                            </div>
+
+                            <button type="submit" id="formSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         Site Footer
+         ====================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Nitheeshwaran V.</h3>
+                    <p>3rd Year B.E. Computer Science and Engineering Student | Aspiring Software Developer</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="mailto:v.nitheeshwaran35@gmail.com" class="social-link" title="Send Email" aria-label="Send Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:9150626410" class="social-link" title="Call Phone" aria-label="Call Phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="https://github.com/nitheeshwaran35" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/nitheeshwaran-v" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Nitheeshwaran V. All rights reserved.</div>
+                <div>Designed &amp; Developed with HTML5, CSS3, JavaScript, Node.js &amp; MySQL</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         Scroll-To-Top Floating Button
+         ====================================================================== -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ======================================================================
+         Certificate Preview Modal
+         ====================================================================== -->
+    <div class="modal-overlay" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Internship Certificate Preview</h3>
+                <button class="modal-close-btn modal-close-trigger" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="certIframe" src="assets/certificates/Scion_Internship_Certificate.pdf" class="modal-iframe" title="Scion Internship Certificate"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a id="certDownloadLink" href="assets/certificates/Scion_Internship_Certificate.pdf" download="Scion_Internship_Certificate.pdf" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-download"></i> Download Certificate
+                </a>
+                <button class="btn btn-secondary btn-sm modal-close-trigger">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <!-- Client-side Logic Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
