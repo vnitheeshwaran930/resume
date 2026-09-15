@@ -28,16 +28,16 @@ app.use('/api/skills', skillRoutes);
 
 // Dedicated Secure Resume Download Endpoint
 app.get('/api/resume/download', (req, res) => {
-    const resumePath = path.join(__dirname, 'public', 'assets', 'resume', 'Nitheeshwaran_V_Resume.pdf');
+    const resumePath = path.join(__dirname, 'public', 'resume', 'Nitheeshwaran_Resume.pdf');
 
     if (fs.existsSync(resumePath)) {
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', 'attachment; filename="Nitheeshwaran_V_Resume.pdf"');
-        return res.download(resumePath, 'Nitheeshwaran_V_Resume.pdf');
+        res.setHeader('Content-Disposition', 'attachment; filename="Nitheeshwaran_Resume.pdf"');
+        return res.download(resumePath, 'Nitheeshwaran_Resume.pdf');
     } else {
         return res.status(404).json({
             success: false,
-            message: 'Resume PDF is being generated or was not found.'
+            message: 'Resume PDF was not found.'
         });
     }
 });
@@ -72,7 +72,7 @@ const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Nitheeshwaran V. Portfolio Server is live!`);
     console.log(`🌐 Local URL: \x1b[36mhttp://localhost:${PORT}\x1b[0m`);
     console.log(`📡 Health:    \x1b[36mhttp://localhost:${PORT}/api/health\x1b[0m`);
-    console.log(`📄 Resume:    \x1b[36mhttp://localhost:${PORT}/api/resume/download\x1b[0m`);
+    console.log(`📄 Resume:    \x1b[36mhttp://localhost:${PORT}/resume/Nitheeshwaran_Resume.pdf\x1b[0m`);
     console.log(`======================================================\n`);
 });
 
