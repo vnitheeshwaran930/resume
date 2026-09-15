@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const isActive = hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
             hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            if (isActive) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
         });
 
         // Close mobile menu when a nav link is clicked
@@ -69,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
             });
         });
 
@@ -78,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
             }
         });
     }
@@ -262,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const data = await response.json();
 
                 if (response.ok && data.success) {
-                    showToast('success', 'Message Sent!', data.message || 'Thank you! Nitheeshwaran has received your message.');
+                    showToast('success', 'Message sent successfully!', data.message || 'Message sent successfully!');
                     contactForm.reset();
                 } else {
                     // Express-validator errors array
@@ -272,11 +279,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             showFieldError(fieldId, err.msg);
                         });
                     }
-                    showToast('error', 'Submission Failed', data.message || 'Could not send message. Please try again.');
+                    showToast('error', 'Submission Failed', data.message || 'Unable to send your message right now. Please try again later.');
                 }
             } catch (err) {
                 console.error('Contact Form Fetch Error:', err);
-                showToast('error', 'Network Error', 'Could not connect to server. Please check your connection.');
+                showToast('error', 'Submission Failed', 'Unable to send your message right now. Please try again later.');
             } finally {
                 setButtonLoading(false);
             }
@@ -315,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!formSubmitBtn) return;
         if (isLoading) {
             formSubmitBtn.disabled = true;
-            formSubmitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Sending Message...`;
+            formSubmitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...`;
         } else {
             formSubmitBtn.disabled = false;
             formSubmitBtn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Send Message`;
